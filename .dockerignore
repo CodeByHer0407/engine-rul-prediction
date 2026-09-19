@@ -1,0 +1,19 @@
+# Git
+.git/
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+
+# Dataset and model artifacts
+data/
+models/
+
+# Development files
+notebooks/
+tests/
+.ipynb_checkpoints/
