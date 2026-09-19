@@ -1,0 +1,12 @@
+# Data manipulation
+pandas
+numpy
+
+# Data visualization
+matplotlib
+
+# Machine learning
+scikit-learn
+
+# Interactive notebooks
+jupyterlab
