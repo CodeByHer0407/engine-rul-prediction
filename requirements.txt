@@ -10,3 +10,7 @@ scikit-learn
 
 # Interactive notebooks
 jupyterlab
+
+lightgbm
+joblib
+pytest

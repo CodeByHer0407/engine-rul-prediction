@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Project-specific exclusions
+
+# NASA dataset
+data/raw/
+
+# Trained ML models
+models/
+
+# Local environment
+.venv/
+.env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
