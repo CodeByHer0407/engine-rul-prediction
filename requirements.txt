@@ -1,21 +1,13 @@
-# Data manipulation
-pandas
-numpy
+# Include all runtime dependencies
+-r requirements-api.txt
 
 # Data visualization
-matplotlib
+matplotlib==3.11.2
 
-# Machine learning
-scikit-learn
+# Notebook development
+jupyterlab==4.6.3
+ipykernel==7.3.0
 
-# Interactive notebooks
-jupyterlab
-
-lightgbm
-joblib
-pytest
-
-# API
-fastapi
-uvicorn[standard]
-httpx
+# Automated testing
+pytest==9.1.1
+httpx==0.28.1
