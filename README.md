@@ -23,6 +23,27 @@ The system is a research and portfolio prototype, not a validated aircraft maint
 - Docker and Docker Compose
 - GitHub Actions
 
+
+## Project Architecture
+
+```mermaid
+flowchart TD
+    A["NASA C-MAPSS FD001 Dataset"] --> B["Data Loading & RUL Label Generation"]
+    B --> C["EDA & Feature Selection"]
+    C --> D["Engine-Level Validation"]
+    D --> E["Model Comparison: Dummy, Ridge, LightGBM"]
+    E --> F["Final LightGBM Training"]
+    F --> G["Saved Model: rul_model_v1.joblib"]
+
+    G --> H["FastAPI Prediction Service"]
+    I["Engine Sensor Input: 18 Features"] --> H
+    H --> J["Input Validation"]
+    J --> K["RUL Prediction"]
+    K --> L["JSON Response: Remaining Cycles"]
+
+    M["Docker Container"] -. "Runs" .-> H
+    N["GitHub Actions"] -. "Runs Automated Tests" .-> O["Unit & API Tests"]
+```
 ## 3. Dataset
 
 Dataset: NASA C-MAPSS (FD001)
